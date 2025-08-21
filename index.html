@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish Kumar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Manish.</a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, I'm <span class="glass-text">Manish Kumar</span></h1>
+            <h3>Frontend Developer</h3>
+            <p>
+                As a skilled web developer, I create dynamic and visually appealing websites. With a strong knowledge of web development principles and a keen eye for design, I strive to build user-friendly and responsive interfaces that enhance the overall user experience.
+            </p>
+            <div class="home-sci">
+                <a href="https://twitter.com/Manishg5299"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/manishgujjar4683/"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/manish-kumar-649b51251/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="documents/manish_resume.pdf (1).pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="home-image">
+            <img src="images/SK010437.JPG" alt="Manish Kumar">
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="about" id="about">
+    <!-- <div class="about-image">
+        <img src="images/image.png" alt="About Me">
+    </div> -->
+    <div class="about-content">
+        <h2>About <span class="glass-text">Me</span></h2>
+        <p>I am committed to staying updated with the latest technologies and trends in web development to ensure that my projects are cutting-edge and innovative. I approach each project with creativity, attention to detail, and a commitment to delivering exceptional results that align with industry standards and best practices.</p>
+    </div>
+    </section>
+
+    <hr>
+
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box glass-card">
+                <i class="fas fa-desktop"></i>
+                <h3>Web Designing</h3>
+                <p>I weave together colors, shapes, and textures to create immersive online experiences that transport users to whimsical worlds of wonder.</p>
+            </div>
+            <div class="skill-box glass-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p>I am a web developer, weaving together design and code to create visually stunning and user-friendly websites with a focus on problem-solving.</p>
+            </div>
+            <div class="skill-box glass-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+                <p>Python is a versatile and readable programming language known for its simplicity and efficiency, ideal for a wide range of applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="projects" id="projects">
+        <h2>My <span class="glass-text">Projects</span></h2>
+        <div class="projects-container">
+            <div class="project-card glass-card">
+                <i class="fas fa-lock"></i>
+                <h3>Password Management System</h3>
+                <p>A secure and user-friendly system built with HTML, CSS, and Flask to store and manage passwords.</p>
+            </div>
+            <div class="project-card glass-card">
+                <i class="fas fa-fire-extinguisher"></i>
+                <h3>Fire Alarm System</h3>
+                <p>An innovative IoT-based fire detection system that triggers real-time alerts to improve safety measures.</p>
+            </div>
+            <div class="project-card glass-card">
+                <i class="fas fa-calculator"></i>
+                <h3>Dynamic Calculator</h3>
+                <p>A dynamic and functional calculator interface built using HTML, CSS, and JavaScript for accurate calculations.</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="contact" id="contact">
+        <div class="contact-form glass-card">
+            <h2>Get in <span class="glass-text">Touch</span></h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="bd186aca-b603-418a-bd62-a8cb0fecb558">
+                <div class="form-group">
+                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+        <div class="contact-image">
+            <img src="images/self-img.jpg" alt="Manish Kumar">
+        </div>
+    </section>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="copyright">
+            <p>&copy; 2024 Manish Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuIcon = document.querySelector('.menu-icon');
+        const navbar = document.querySelector('.navbar');
+
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
