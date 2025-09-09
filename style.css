@@ -17,9 +17,13 @@
 }
 
 body {
+    cursor: default;
     background: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
+}
+a, .btn, .skill-box, .project-card {
+   cursor: pointer;  
 }
 
 h1, h2, h3 {
@@ -382,6 +386,30 @@ hr {
     font-size: 16px;
     color: var(--sub-text-color);
 }
+.project-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.btn-project {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0 10px;
+    border: 1px solid var(--accent-color);
+    border-radius: 20px;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+}
+
+.btn-project:hover {
+    background: var(--accent-color);
+    color: var(--bg-color);
+}
 
 /* Contact Section */
 .contact {
@@ -500,4 +528,25 @@ hr {
     .home-content h3 {
         font-size: 28px;
     }
+}
+
+.glass-card {
+    background: rgba(26, 26, 26, 0.5); 
+    backdrop-filter: blur(10px); 
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    padding: 40px;
+    /* text-align: center; */
+    transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-10px);
+}
+
+.glass-text {
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--box-shadow-color);
 }
