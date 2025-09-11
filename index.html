@@ -79,37 +79,83 @@
     <section class="projects" id="projects">
         <h2>My <span class="glass-text">Projects</span></h2>
         <div class="projects-container">
+
             <div class="project-card glass-card">
-                <i class="icon-lock"></i>
-                <h3>Password Management System</h3>
-                <div class="tech-tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>Flask</span>
-                </div>
-                <p>A secure and user-friendly system built with HTML, CSS, and Flask to store and manage passwords.</p>
-                <div class="project-links">
-                    <a href="#" class="btn-project">Live Demo</a>
-                    <a href="#" class="btn-project">Source Code</a>
-                </div>
+               <i class="icon-lock"></i>
+               <h3>Password Management System</h3>
+               <p>A secure web application for storing and managing user passwords using Flask.</p>
+               <button class="btn-project read-more-btn" data-modal-target="#modal-password">Read More</button>
             </div>
+
             <div class="project-card glass-card">
                 <i class="icon-fire"></i>
                 <h3>Fire Alarm System</h3>
-                <p>An innovative IoT-based fire detection system that triggers real-time alerts to improve safety measures.</p>
-                <div class="project-links">
-                    <a href="#" class="btn-project">Live Demo</a>
-                    <a href="#" class="btn-project">Source Code</a>
-                </div>
+                <p>An IoT-based system for real-time fire detection and alerts.</p>
+                <button class="btn-project read-more-btn" data-modal-target="#modal-fire">Read More</button>
             </div>
+
             <div class="project-card glass-card">
                 <i class="icon-calculator"></i>
                 <h3>Dynamic Calculator</h3>
-                <p>A dynamic and functional calculator interface built using HTML, CSS, and JavaScript for accurate calculations.</p>
-                <div class="project-links">
-                    <a href="#" class="btn-project">Live Demo</a>
-                    <a href="#" class="btn-project">Source Code</a>
-                </div>
+                <p>A functional calculator interface built using HTML, CSS, and JavaScript.</p>
+                <button class="btn-project read-more-btn" data-modal-target="#modal-calculator">Read More</button>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-password">
+            <div class="modal-content glass-card">
+                <span class="close-btn">&times;</span>
+                <h2>Password Management System</h2>
+                <h4>Project Goal:</h4>
+                <p>To create a secure web application for storing and managing user passwords, focusing on backend integration with Python Flask.</p>
+                <h4>Technologies Used:</h4>
+                <p>HTML5, CSS3, Python, Flask Framework.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Functionality to add, view, update, and delete passwords for the user.</li>
+                    <li>Backend logic to handle data securely.</li>
+                    <li>A simple and user-friendly interface.</li>
+                </ul>
+                <h4>What I Learned:</h4>
+                <p>This project taught me how to build a web server using Python and Flask. I also learned how to receive data from HTML forms, process it, and connect the frontend to the backend.</p>
+            </div>
+        </div>
+
+        <div class="modal" id="modal-fire">
+            <div class="modal-content glass-card">
+                <span class="close-btn">&times;</span>
+                <h2>Fire Alarm System</h2>
+                <h4>Project Goal:</h4>
+                <p>To develop an IoT-based fire alarm system that sends real-time alerts upon detecting a fire, providing experience in hardware and software integration.</p>
+                <h4>Technologies Used:</h4>
+                <p>IoT, Flame Sensor, Microcontroller (ESP8266/Arduino), Real-time Alert System.</p>
+                <h4>Key Features:</h4>
+                <ul>
+                   <li>Utilizes sensors for immediate detection of fire or smoke.</li>
+                   <li>Activates a buzzer/alarm upon detecting a threat.</li>
+                   <li>Sends real-time alerts to notify the user instantly.</li>
+                </ul>
+                <h4>What I Learned:</h4>
+                <p>From this project, I learned how to interface sensors with a microcontroller. I understood the principles of IoT and how to build a real-time alert system by sending data from a hardware device.</p>
+            </div>
+        </div>
+    
+        <div class="modal" id="modal-calculator">
+            <div class="modal-content glass-card">
+               <span class="close-btn">&times;</span>
+               <h2>Dynamic Calculator</h2>
+               <h4>Project Goal:</h4>
+               <p>To build a fully functional, responsive calculator using Vanilla JavaScript to strengthen DOM manipulation and logic-building skills.</p>
+               <h4>Technologies Used:</h4>
+               <p>HTML5, CSS3 (Flexbox), Vanilla JavaScript.</p>
+               <h4>Key Features:</h4>
+               <ul>
+                   <li>Supports all basic arithmetic operations (add, subtract, multiply, divide).</li>
+                   <li>Includes clear (C) and backspace (⌫) functionality.</li>
+                   <li>Responsive design works well on both mobile and desktop.</li>
+                </ul>
+                <h4>What I Learned:</h4>
+                <p>Through this project, I strengthened my understanding of DOM manipulation and event handling in JavaScript. I also learned the logic for handling mathematical expressions and managing user input.</p>
             </div>
         </div>
     </section>
@@ -172,6 +218,31 @@
 
          ScrollReveal().reveal('.home-content, .about-content h2, .skills h2, .projects h2', { origin: 'top' });
         ScrollReveal().reveal('.home-image, .skills-container, .projects-container', { origin: 'bottom' });
+    </script>
+    <script>
+        const readMoreBtns = document.querySelectorAll('.read-more-btn');
+        const modals = document.querySelectorAll('.modal');
+        const closeBtns = document.querySelectorAll('.close-btn');
+
+        readMoreBtns.forEach(btn => {
+            btn.onclick = function() {
+                const modal = document.querySelector(btn.dataset.modalTarget);
+                modal.style.display = "block";
+          }
+        });
+
+        closeBtns.forEach(btn => {
+            btn.onclick = function() {
+                const modal = btn.closest('.modal');
+                modal.style.display = "none";
+            }
+        });
+
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                 event.target.style.display = "none";
+            }
+       }
     </script>
 </body>
 </html>
