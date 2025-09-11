@@ -6,6 +6,9 @@
     <title>Manish Kumar - Frontend Developer Portfolio | Yamunanagar, Haryana</title>
     <meta name="description" content="Portfolio of Manish Kumar, a skilled frontend developer based in Yamunanagar, Haryana. Specializing in high-performance websites using HTML, CSS, JavaScript, and Python/Flask.">
     <meta name="google-site-verification" content="j7CERw9rXN1U58njRc3ITaBukE_-J3gdCpLhuGAwOyk" />
+    
+    <link rel="preload" as="image" href="images/SK010437.webp">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +23,8 @@
             <a href="#contact">Contact</a>
         </nav>
         <div class="menu-icon">
-            <i class="icon-display"></i> </div>
+            <i class="icon-display"></i> 
+        </div>
     </header>
 
     <section class="home" id="home">
@@ -38,7 +42,7 @@
             <a href="documents/manish_resume.pdf (1).pdf" download class="btn">Download CV</a>
         </div>
         <div class="home-image">
-            <img src="images/SK010437.webp" alt="Profile photo of Manish Kumar, a frontend web developer"  width="400" height="400">
+            <img src="images/SK010437.webp" alt="Profile photo of Manish Kumar, a frontend web developer" width="400" height="400">
         </div>
     </section>
 
@@ -150,12 +154,12 @@
                <p>HTML5, CSS3 (Flexbox), Vanilla JavaScript.</p>
                <h4>Key Features:</h4>
                <ul>
-                   <li>Supports all basic arithmetic operations (add, subtract, multiply, divide).</li>
-                   <li>Includes clear (C) and backspace (⌫) functionality.</li>
-                   <li>Responsive design works well on both mobile and desktop.</li>
-                </ul>
-                <h4>What I Learned:</h4>
-                <p>Through this project, I strengthened my understanding of DOM manipulation and event handling in JavaScript. I also learned the logic for handling mathematical expressions and managing user input.</p>
+                    <li>Supports all basic arithmetic operations (add, subtract, multiply, divide).</li>
+                    <li>Includes clear (C) and backspace (⌫) functionality.</li>
+                    <li>Responsive design works well on both mobile and desktop.</li>
+                 </ul>
+                 <h4>What I Learned:</h4>
+                 <p>Through this project, I strengthened my understanding of DOM manipulation and event handling in JavaScript. I also learned the logic for handling mathematical expressions and managing user input.</p>
             </div>
         </div>
     </section>
@@ -183,7 +187,7 @@
             </form>
         </div>
         <div class="contact-image">
-            <img src="images/SK010437.webp" alt="Manish Kumar contact section image"  width="400" height="400">
+            <img src="images/SK010437.webp" alt="Manish Kumar contact section image" width="400" height="400">
         </div>
     </section>
 
@@ -194,31 +198,8 @@
             <p>&copy; 2025 Manish Kumar | Frontend Developer | Yamunanagar, Haryana, India</p>
         </div>
     </footer>
-
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <script>
-        const menuIcon = document.querySelector('.menu-icon');
-        const navbar = document.querySelector('.navbar');
-        menuIcon.addEventListener('click', () => {
-            navbar.classList.toggle('active');
-        });
-        var typed = new Typed('#animated-text', {
-            strings: ['Frontend Developer in Haryana', 'Web Designer', 'Python Coder'],
-            typeSpeed: 70,
-            backSpeed: 50,
-            loop: true
-        });
-        ScrollReveal({
-            distance: '60px',
-            duration: 2000,
-            delay: 200
-        });
-
-         ScrollReveal().reveal('.home-content, .about-content h2, .skills h2, .projects h2', { origin: 'top' });
-        ScrollReveal().reveal('.home-image, .skills-container, .projects-container', { origin: 'bottom' });
-    </script>
+    
     <script src="script.js"></script>
+
 </body>
 </html>
