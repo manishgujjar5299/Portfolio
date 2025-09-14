@@ -599,3 +599,11 @@ hr {
     text-decoration: none;
     cursor: pointer;
 }
+.modal-links {
+    margin-top: 30px;
+}
+
+.modal-links .btn {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
