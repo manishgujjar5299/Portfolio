@@ -70,6 +70,8 @@
 }
 
 body {
+    font-family: 'Poppins', sans-serif;
+    font-family-adjust: 0.5;
     cursor: default;
     background: var(--bg-color);
     color: var(--text-color);
