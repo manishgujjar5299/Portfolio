@@ -87,6 +87,18 @@
         <div class="projects-container">
 
             <div class="project-card glass-card">
+                <i class="icon-display"></i> <h3>Blogging Platform</h3>
+                <p>A full-stack CRUD application for writing and managing blog posts, with user authentication.</p>
+                <button class="btn-project read-more-btn" data-modal-target="#modal-blog">Read More</button>
+            </div>
+
+            <div class="project-card glass-card">
+                <i class="icon-embed"></i> <h3>URL Shortener</h3>
+                <p>A backend-focused app to convert long URLs into short, shareable links using Python and Flask.</p>
+                <button class="btn-project read-more-btn" data-modal-target="#modal-url-shortener">Read More</button>
+            </div>
+
+            <div class="project-card glass-card">
                <i class="icon-lock"></i>
                <h3>Password Management System</h3>
                <p>A secure web application for storing and managing user passwords using Flask.</p>
@@ -108,6 +120,45 @@
             </div>
         </div>
 
+        <div class="modal" id="modal-blog">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <h2>Blogging Platform</h2>
+            <h4>Project Goal:</h4>
+            <p>To create a complete, dynamic CRUD (Create, Read, Update, Delete) application that allows users to write, publish, and manage their own blog posts.</p>
+            <h4>Technologies Used:</h4>
+            <p>Python, Flask, SQLite, HTML/CSS, User Authentication.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Secure user registration and login system.</li>
+                <li>A dashboard for authenticated users to create new posts, and edit or delete their existing posts.</li>
+                <li>A public-facing page to display all published articles.</li>
+                <li>Each post has its own unique page.</li>
+            </ul>
+            <h4>What I Learned:</h4>
+            <p>This was a comprehensive full-stack project. I learned how to implement a full CRUD system, manage user sessions for authentication, design a database schema for related data (users and posts), and build a multi-page dynamic website.</p>
+        </div>
+        </div>
+    
+        <div class="modal" id="modal-url-shortener">
+        <div class="modal-content glass-card">
+            <span class="close-btn">&times;</span>
+            <h2>URL Shortener</h2>
+            <h4>Project Goal:</h4>
+            <p>To build a full-stack web application that takes a long URL as input and generates a short, unique link that redirects to the original URL.</p>
+            <h4>Technologies Used:</h4>
+            <p>Python, Flask, SQLite (for the database), HTML/CSS.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li>Accepts any valid URL and produces a short, easy-to-share link.</li>
+                <li>Stores the mapping of short links to long URLs in a database.</li>
+                <li>Automatically redirects users from the short link to the original destination.</li>
+            </ul>
+            <h4>What I Learned:</h4>
+            <p>This project was a deep dive into backend development. I learned how to manage a database with SQLite, create API endpoints, handle HTTP redirects, and generate unique identifiers for user-submitted data.</p>
+        </div>
+        </div>
+        
         <div class="modal" id="modal-password">
             <div class="modal-content glass-card">
                 <span class="close-btn">&times;</span>
