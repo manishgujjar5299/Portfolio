@@ -3,45 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manish Kumar - Frontend Developer Portfolio | Yamunanagar, Haryana</title>
-    <meta name="description" content="Portfolio of Manish Kumar, a skilled frontend developer based in Yamunanagar, Haryana. Specializing in high-performance websites using HTML, CSS, JavaScript, and Python/Flask.">
-    <meta name="google-site-verification" content="j7CERw9rXN1U58njRc3ITaBukE_-J3gdCpLhuGAwOyk" />
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://manishkumar-dev.netlify.app/">
+
+    <title>Manish Kumar | React & Full Stack Developer Portfolio</title>
+    <meta name="description" content="Explore the portfolio of Manish Kumar, a React & Full Stack Developer from Haryana, India. Specializing in high-performance, SEO-optimized web applications.">
+    <meta name="keywords" content="Manish Kumar, React Developer, Full Stack Developer, Frontend Developer, Portfolio, Web Developer, Haryana, Yamunanagar, SEO">
+    <meta name="author" content="Manish Kumar">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://manishkumar-dev.netlify.app/">
+    <meta property="og:title" content="Manish Kumar | React & Full Stack Developer Portfolio">
+    <meta property="og:description" content="Specializing in high-performance, SEO-optimized web applications. View my projects.">
+    <meta property="og:image" content="https://manishkumar-dev.netlify.app/images/portfolio-og-image.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://manishkumar-dev.netlify.app/">
+    <meta property="twitter:title" content="Manish Kumar | React & Full Stack Developer Portfolio">
+    <meta property="twitter:description" content="Specializing in high-performance, SEO-optimized web applications. View my projects.">
+    <meta property="twitter:image" content="https://manishkumar-dev.netlify.app/images/portfolio-og-image.png">
     
-    <link rel="preload" as="image" href="images/SK010437.jpg">
+    <meta name="google-site-verification" content="j7CERw9rXN1U58njRc3ITaBukE_-J3gdCpLhuGAwOyk" />
+
+    <link rel="preload" as="image" href="images/manish-kumar-profile.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"></noscript>
-
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Manish Kumar",
       "url": "https://manishkumar-dev.netlify.app/",
-      "jobTitle": "Frontend Developer",
+      "image": "https://manishkumar-dev.netlify.app/images/manish-kumar-profile.webp",
+      "jobTitle": "Full Stack Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Manish Kumar"
+      },
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Yamunanagar",
         "addressRegion": "Haryana",
         "addressCountry": "IN"
       },
-      "alumniOf": {
-        "@type": "CollegeOrUniversity",
-        "name": "[Your College Name]"
-      },
-      "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Python", "Flask", "SEO"]
+      "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Flask", "SEO", "Web Performance"]
     }
     </script>
 </head>
 <body>
 
     <header class="header">
-        <a href="#" class="logo">Manish.</a>
+        <a href="#home" class="logo">Manish.</a>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
@@ -59,9 +75,7 @@
         <div class="home-content">
             <h1>Hi, I'm <span class="glass-text">Manish Kumar</span></h1>
             <h2>I'm a <span id="animated-text"></span></h2>
-            <p>
-                As a skilled web developer, I create dynamic and visually appealing websites. With a strong knowledge of web development principles and a keen eye for design, I strive to build user-friendly and responsive interfaces that enhance the overall user experience.
-            </p>
+            <p>A skilled developer creating dynamic and visually appealing websites. With a strong knowledge of web development principles and SEO, I build user-friendly and responsive interfaces that enhance the user experience.</p>
             <div class="home-sci">
                 <a href="https://twitter.com/Manishg5299" aria-label="Visit my Twitter profile"><i class="icon-twitter"></i></a>
                 <a href="https://www.instagram.com/manishgujjar4683/" aria-label="Visit my Instagram profile"><i class="icon-instagram"></i></a>
@@ -70,7 +84,7 @@
             <a href="documents/manish_resume.pdf (1).pdf" download class="btn">Download CV</a>
         </div>
         <div class="home-image">
-            <img src="images/SK010437 (1).jpg" alt="Profile photo of Manish Kumar, a frontend web developer" width="400" height="400">
+            <img src="images/SK010437 (1).jpg" alt="Profile photo of Manish Kumar, a Full Stack Developer from Haryana" width="400" height="400">
         </div>
     </section>
 
@@ -78,16 +92,14 @@
 
     <section class="about" id="about">
         <div class="about-content">
-           <h2>About <span class="glass-text">Me</span></h2>
-
-           <p>
-            My journey into web development started with a simple curiosity about how websites work, but it quickly grew into a passion for building beautiful, high-performance web experiences from the ground up. I am a detail-oriented frontend developer based in Yamunanagar, Haryana, who loves solving problems and bringing ideas to life on the screen.
-            <br><br>
-            I specialize in creating modern user interfaces with <strong>HTML5, CSS3, and JavaScript</strong>, and I am now actively building projects with <strong>React</strong>. I also have foundational experience with backend development from a team project where we used <strong>Python and Flask</strong>. A practical skill I'm particularly proud of is <strong>on-page and technical SEO</strong>. I recently applied these principles to my own portfolio, successfully optimizing its performance and dramatically improving its Google PageSpeed score.
-            <br><br>
-            I am passionate about building modern, efficient web applications and am currently deepening my expertise in the <strong>React</strong> ecosystem. I am actively seeking an opportunity as a <strong>Frontend Developer</strong> where I can contribute to meaningful projects, continue to grow my skills, and apply my knowledge of performance and SEO. If you're looking for a motivated developer with a keen eye for detail and performance, I'd love to connect.
+            <h2>About <span class="glass-text">Me</span></h2>
+            <p>
+                My journey into web development started with a simple curiosity but quickly grew into a passion for building high-performance web experiences from the ground up. I am a detail-oriented developer based in Yamunanagar, Haryana, who loves solving problems and bringing ideas to life on the screen.
+                <br><br>
+                I specialize in creating modern user interfaces with **React, HTML5, CSS3, and JavaScript**. I also have foundational experience with backend development using **Node.js** and **Python/Flask**. A practical skill I'm particularly proud of is **on-page and technical SEO**. I applied these principles to this portfolio, dramatically improving its Google PageSpeed score.
+                <br><br>
+                I am actively seeking an opportunity as a **Full Stack or React Developer** where I can contribute to meaningful projects, continue to grow, and apply my knowledge of performance and SEO.
             </p>
-
         </div>
     </section>
 
