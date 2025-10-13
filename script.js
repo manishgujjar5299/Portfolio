@@ -9,17 +9,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Typed.js Animation
+    // Typed.js Animation (if it exists)
     if (typeof Typed !== 'undefined' && document.querySelector('#animated-text')) {
         var typed = new Typed('#animated-text', {
-            strings: ['Frontend Developer in Haryana', 'Web Designer', 'Python Coder'],
+            strings: ['Full Stack Developer', 'React Developer', 'SEO Specialist'],
             typeSpeed: 70,
             backSpeed: 50,
             loop: true
         });
     }
 
-    // ScrollReveal Animation
+    // ScrollReveal Animation (if it exists)
     if (typeof ScrollReveal !== 'undefined') {
         ScrollReveal({
             distance: '60px',
@@ -32,9 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Modal JavaScript
     const readMoreBtns = document.querySelectorAll('.read-more-btn');
-    const modals = document.querySelectorAll('.modal');
-    const closeBtns = document.querySelectorAll('.close-btn');
-
     readMoreBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const modal = document.querySelector(btn.dataset.modalTarget);
@@ -42,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    const closeBtns = document.querySelectorAll('.close-btn');
     closeBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const modal = btn.closest('.modal');
@@ -55,4 +53,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+  // CORRECTED Logic for "View All Projects" button
+const viewAllBtn = document.getElementById('view-all-btn');
+if (viewAllBtn) {
+    viewAllBtn.addEventListener('click', function() {
+        const hiddenProjects = document.querySelectorAll('.hidden-project');
+        hiddenProjects.forEach(project => {
+            // This simpler version just removes the class that hides the project
+            project.classList.remove('hidden-project');
+        });
+        viewAllBtn.style.display = 'none'; // Hide the button after it's clicked
+    });
+};
 });

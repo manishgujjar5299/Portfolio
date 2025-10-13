@@ -607,3 +607,13 @@ hr {
     margin-right: 15px;
     margin-bottom: 10px;
 }
+/* Styles for View All Projects button and hidden projects */
+.hidden-project {
+    display: none !important;
+}
+
+.view-all-container {
+    width: 100%;
+    text-align: right;
+    margin-top: 40px;
+}
