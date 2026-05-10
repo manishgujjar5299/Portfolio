@@ -1,347 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://manishkumar-dev.netlify.app/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Manish Kumar | React & Full Stack Developer Portfolio</title>
-    <meta name="description" content="Explore the portfolio of Manish Kumar, a React & Full Stack Developer (एक वेब डेवलपर) from Haryana, India. Specializing in high-performance, SEO-optimized web applications.">
-    <meta name="keywords" content="Manish Kumar, React Developer, Full Stack Developer, Frontend Developer, Portfolio, Web Developer, Haryana, Yamunanagar, SEO, वेब डेवलपर, फ्रंटएंड डेवलपर, फुल स्टैक डेवलपर">
-    <meta name="author" content="Manish Kumar">
+  <title>Manish Kumar | Frontend Developer Portfolio</title>
+  <meta name="description" content="Manish Kumar is a frontend-focused developer from Yamunanagar, Haryana skilled in HTML, CSS, JavaScript, responsive UI, basic React, SEO, and web performance basics." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://manishkumar-dev.netlify.app/" />
 
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://manishkumar-dev.netlify.app/">
-    <meta property="og:title" content="Manish Kumar | React & Full Stack Developer Portfolio">
-    <meta property="og:description" content="Specializing in high-performance, SEO-optimized web applications. View my projects.">
-    <meta property="og:image" content="https://manishkumar-dev.netlify.app/images/portfolio-og-image.png">
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Manish Kumar | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Clean frontend developer portfolio focused on responsive UI, JavaScript projects, SEO basics, and modern web design." />
+  <meta property="og:url" content="https://manishkumar-dev.netlify.app/" />
+  <meta property="og:image" content="images/portfolio-og-image.png" />
 
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://manishkumar-dev.netlify.app/">
-    <meta property="twitter:title" content="Manish Kumar | React & Full Stack Developer Portfolio">
-    <meta property="twitter:description" content="Specializing in high-performance, SEO-optimized web applications. View my projects.">
-    <meta property="twitter:image" content="https://manishkumar-dev.netlify.app/images/portfolio-og-image.png">
-    
-    <meta name="google-site-verification" content="j7CERw9rXN1U58njRc3ITaBukE_-J3gdCpLhuGAwOyk" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 
-    <link rel="preload" as="image" href="images/manish-kumar-profile.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="style.css">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Manish Kumar",
-      "url": "https://manishkumar-dev.netlify.app/",
-      "image": "https://manishkumar-dev.netlify.app/images/manish-kumar-profile.webp",
-      "jobTitle": "Full Stack Developer",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Manish Kumar"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Yamunanagar",
-        "addressRegion": "Haryana",
-        "addressCountry": "IN"
-      },
-      "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Python", "Flask", "SEO", "Web Performance"]
-    }
-    </script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JV2TD73FQY"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-JV2TD73FQY');
-    </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Manish Kumar",
+    "url": "https://manishkumar-dev.netlify.app/",
+    "jobTitle": "Frontend Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Yamunanagar",
+      "addressRegion": "Haryana",
+      "addressCountry": "IN"
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "Responsive Web Design", "Basic React", "SEO", "Basic SQL"]
+  }
+  </script>
 </head>
+
 <body>
+  <div class="page-bg"></div>
 
-    <header class="header">
-        <a href="#home" class="logo">Manish.</a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="frontend-seo-guide.html">SEO Guide</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="menu-icon">
-            <i class="icon-display"></i> 
-        </div>
-    </header>
+  <header class="site-header">
+    <a class="logo" href="#home">MK</a>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span class="glass-text">Manish Kumar</span></h1>
-            <h2>I'm a <span id="animated-text"></span></h2>
-            <p>A skilled developer creating dynamic and visually appealing websites. With a strong knowledge of web development principles and SEO, I build user-friendly and responsive interfaces that enhance the user experience.</p>
-            <div class="home-sci">
-                <a href="https://twitter.com/Manishg5299" aria-label="Visit my Twitter profile"><i class="icon-twitter"></i></a>
-                <a href="https://www.instagram.com/manishgujjar4683/" aria-label="Visit my Instagram profile"><i class="icon-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/manish-kumar-649b51251/" aria-label="Visit my Linkedin profile"><i class="icon-linkedin"></i></a>
-            </div>
-            <a href="documents/manish_resume.pdf (1).pdf" download class="btn">Download CV</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="frontend-seo-guide.html">SEO Notes</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-left">
+        <div class="badge">Available for Frontend / Web Trainee Roles</div>
+
+        <h1>Building clean, responsive and SEO-friendly web interfaces.</h1>
+
+        <p class="hero-text">
+          I’m Manish Kumar, a frontend-focused B.Tech CSE student from Haryana.
+          I work with HTML, CSS, JavaScript, responsive design, basic React, and SEO fundamentals.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="documents/manish_resume.pdf" download>Download Resume</a>
         </div>
-        <div class="home-image">
-            <img src="images/SK010437 (1).jpg" alt="Profile photo of Manish Kumar, a Full Stack Developer from Haryana" width="400" height="400">
+
+        <div class="hero-stats">
+          <div>
+            <strong>Frontend</strong>
+            <span>Main Focus</span>
+          </div>
+          <div>
+            <strong>SEO</strong>
+            <span>Basic Practical</span>
+          </div>
+          <div>
+            <strong>React</strong>
+            <span>Currently Learning</span>
+          </div>
         </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="profile-card">
+          <img src="images/manish-kumar-profile.jpg" alt="Manish Kumar frontend developer profile photo" width="420" height="420" />
+          <div class="profile-info">
+            <h2>Manish Kumar</h2>
+            <p>Frontend Developer Fresher</p>
+          </div>
+        </div>
+
+        <div class="floating-card top-card">
+          <span>⚡</span>
+          <p>Responsive UI</p>
+        </div>
+
+        <div class="floating-card bottom-card">
+          <span>📈</span>
+          <p>SEO Basics</p>
+        </div>
+      </div>
     </section>
 
-    <hr>
-
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2>About <span class="glass-text">Me</span></h2>
-            <p>
-                My journey into web development started with a simple curiosity but quickly grew into a passion for building high-performance web experiences from the ground up. I am a detail-oriented developer based in Yamunanagar, Haryana, who loves solving problems and bringing ideas to life on the screen.
-                <br><br>
-                I specialize in creating modern user interfaces with **React, HTML5, CSS3, and JavaScript**. I also have foundational experience with backend development using **Node.js** and **Python/Flask**. A practical skill I'm particularly proud of is **on-page and technical SEO**. I applied these principles to this portfolio, dramatically improving its Google PageSpeed score.
-                <br><br>
-                I am actively seeking an opportunity as a **Full Stack or React Developer (या एक वेब डेवलपर)** where I can contribute to meaningful projects, continue to grow, and apply my knowledge of performance and SEO.
-            </p>
-        </div>
+    <section class="section intro-strip">
+      <p>
+        I am focused on creating simple, clean and practical websites — not overdesigned, not confusing.
+        My goal is to become strong in frontend basics and grow through real project work.
+      </p>
     </section>
 
-    <hr>
+    <section class="section" id="about">
+      <div class="section-head">
+        <span>About</span>
+        <h2>A clear fresher profile for real opportunities.</h2>
+      </div>
 
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-box glass-card">
-                <i class="icon-display"></i>
-                <h3>Web Designing</h3>
-                <p>I weave together colors, shapes, and textures to create immersive online experiences that transport users to whimsical worlds of wonder.</p>
-            </div>
-            <div class="skill-box glass-card">
-                <i class="icon-embed"></i>
-                <h3>Web Development</h3>
-                <p>I am a web developer, weaving together design and code to create visually stunning and user-friendly websites with a focus on problem-solving.</p>
-            </div>
-            <div class="skill-box glass-card">
-                <i class="icon-python"></i>
-                <h3>Python</h3>
-                <p>Python is a versatile and readable programming language known for its simplicity and efficiency, ideal for a wide range of applications.</p>
-            </div>
-            <div class="skill-box glass-card">
-                <i class="icon-embed"></i>
-                <h3>SEO & Performance</h3>
-                <p>Practical experience in on-page and technical SEO to improve site speed, user experience, and Google search ranking.</p>
-            </div>
+      <div class="about-layout">
+        <article class="large-card">
+          <h3>What I bring</h3>
+          <p>
+            I can create responsive website sections, landing pages, portfolios, forms, navigation bars,
+            project cards and simple interactive components using frontend basics. I also understand
+            how SEO tags, headings, alt text and performance affect a website.
+          </p>
+        </article>
+
+        <div class="mini-card-grid">
+          <article class="mini-card">
+            <h3>Education</h3>
+            <p>B.Tech CSE student with interest in frontend development and web technologies.</p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Working Style</h3>
+            <p>I prefer clean structure, simple UI, proper spacing, readable content and mobile-first design.</p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Career Goal</h3>
+            <p>Start as a frontend developer, trainee or intern and improve through real tasks.</p>
+          </article>
+
+          <article class="mini-card">
+            <h3>Learning</h3>
+            <p>Improving JavaScript, React basics, SQL basics, GitHub and deployment workflow.</p>
+          </article>
         </div>
+      </div>
     </section>
 
-    <hr>
+    <section class="section" id="skills">
+      <div class="section-head center">
+        <span>Skills</span>
+        <h2>Practical skills, presented honestly.</h2>
+      </div>
 
-    <section class="projects" id="projects">
-        <h2>My <span class="glass-text">Projects</span></h2>
-        <div class="projects-container">
+      <div class="skills-list">
+        <article>
+          <div class="skill-icon">01</div>
+          <h3>HTML & CSS</h3>
+          <p>Semantic layout, responsive sections, forms, cards, buttons, spacing and visual hierarchy.</p>
+        </article>
 
-            <div class="project-card glass-card">
-                <i class="icon-display"></i> <h3>PressMart E-commerce</h3>
-                <p>A full-stack e-commerce platform built with the MERN stack (React, Node.js, MongoDB).</p>
-                <a href="pressmart-case-study.html" class="btn-project">View Case Study</a> </div>
+        <article>
+          <div class="skill-icon">02</div>
+          <h3>JavaScript</h3>
+          <p>DOM events, basic validation, menu toggles, modals, dynamic text and simple interactions.</p>
+        </article>
 
-            <div class="project-card glass-card">
-                <i class="icon-display"></i> <h3>Blogging Platform</h3>
-                <p>A full-stack CRUD application for writing and managing blog posts, with user authentication.</p>
-                 <a href="blogging-platform-case-study.html" class="btn-project">View Case Study</a>
-            </div>
+        <article>
+          <div class="skill-icon">03</div>
+          <h3>Basic React</h3>
+          <p>Learning components, props, state, reusable sections and frontend project structure.</p>
+        </article>
 
-            <div class="project-card glass-card">
-                <i class="icon-embed"></i> <h3>URL Shortener</h3>
-                <p>A backend-focused app to convert long URLs into short, shareable links using Python and Flask.</p>
-                <button class="btn-project read-more-btn" data-modal-target="#modal-url-shortener">Read More</button>
-            </div>
+        <article>
+          <div class="skill-icon">04</div>
+          <h3>SEO Basics</h3>
+          <p>Title tags, meta descriptions, headings, alt text, internal links and performance awareness.</p>
+        </article>
 
-            <div class="project-card glass-card">
-               <i class="icon-lock"></i>
-               <h3>Password Management System</h3>
-               <p>A secure web application for storing and managing user passwords using Flask.</p>
-               <button class="btn-project read-more-btn" data-modal-target="#modal-password">Read More</button>
-            </div>
+        <article>
+          <div class="skill-icon">05</div>
+          <h3>Basic SQL</h3>
+          <p>Single-table CRUD queries, filtering, sorting and basic database understanding.</p>
+        </article>
 
-            <div class="project-card glass-card">
-                <i class="icon-fire"></i>
-                <h3>Fire Alarm System</h3>
-                <p>An IoT-based system for real-time fire detection and alerts.</p>
-                <button class="btn-project read-more-btn" data-modal-target="#modal-fire">Read More</button>
-            </div>
-
-            <div class="project-card glass-card">
-                <i class="icon-calculator"></i>
-                <h3>Dynamic Calculator</h3>
-                <p>A functional calculator interface built using HTML, CSS, and JavaScript.</p>
-                <button class="btn-project read-more-btn" data-modal-target="#modal-calculator">Read More</button>
-            </div>
-        </div>
-
-        <div class="modal" id="modal-blog">
-        <div class="modal-content glass-card">
-            <span class="close-btn">&times;</span>
-            <h2>Blogging Platform</h2>
-            <h4>Project Goal:</h4>
-            <p>To create a complete, dynamic CRUD (Create, Read, Update, Delete) application that allows users to write, publish, and manage their own blog posts.</p>
-            <h4>Technologies Used:</h4>
-            <p> Python, Flask, SQLite, HTML/CSS, User Authentication.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Secure user registration and login system.</li>
-                <li>A dashboard for authenticated users to create new posts, and edit or delete their existing posts.</li>
-                <li>A public-facing page to display all published articles.</li>
-                <li>Each post has its own unique page.</li>
-            </ul>
-            <h4>What I Learned:</h4>
-            <p>This was a comprehensive full-stack project. I learned how to implement a full CRUD system, manage user sessions for authentication, design a database schema for related data (users and posts), and build a multi-page dynamic website.</p>
-            <div class="modal-links">
-                <a href="#" class="btn" target="_blank">View Live Demo</a>
-                <a href="https://github.com/manishgujjar5299/BLOGING-PLATFORM" class="btn" target="_blank">View Source Code</a>
-            </div>
-        </div>
-        </div>
-    
-        <div class="modal" id="modal-url-shortener">
-        <div class="modal-content glass-card">
-            <span class="close-btn">&times;</span>
-            <h2>URL Shortener</h2>
-            <h4>Project Goal:</h4>
-            <p>To build a full-stack web application that takes a long URL as input and generates a short, unique link that redirects to the original URL.</p>
-            <h4>Technologies Used:</h4>
-            <p>Python, Flask, SQLite (for the database), HTML/CSS.</p>
-            <h4>Key Features:</h4>
-            <ul>
-                <li>Accepts any valid URL and produces a short, easy-to-share link.</li>
-                <li>Stores the mapping of short links to long URLs in a database.</li>
-                <li>Automatically redirects users from the short link to the original destination.</li>
-            </ul>
-            <h4>What I Learned:</h4>
-            <p>This project was a deep dive into backend development. I learned how to manage a database with SQLite, create API endpoints, handle HTTP redirects, and generate unique identifiers for user-submitted data.</p>
-            <div class="modal-links">
-                <a href="#" class="btn" target="_blank">View Live Demo</a>
-                <a href="https://github.com/manishgujjar5299/url-shortener-app" class="btn" target="_blank">View Source Code</a>
-            </div>
-        </div>
-        </div>
-
-        <div class="modal" id="modal-password">
-            <div class="modal-content glass-card">
-                <span class="close-btn">&times;</span>
-                <h2>Password Management System</h2>
-                <h4>Project Goal:</h4>
-                <p>To create a secure web application for storing and managing user passwords, focusing on backend integration with Python Flask.</p>
-                <h4>Technologies Used:</h4>
-                <p>HTML5, CSS3, Python, Flask Framework.</p>
-                <h4>Key Features:</h4>
-                <ul>
-                    <li>Functionality to add, view, update, and delete passwords for the user.</li>
-                    <li>Backend logic to handle data securely.</li>
-                    <li>A simple and user-friendly interface.</li>
-                </ul>
-                <h4>What I Learned:</h4>
-                <p>This project taught me how to build a web server using Python and Flask. I also learned how to receive data from HTML forms, process it, and connect the frontend to the backend.</p>
-                <div class="modal-links">
-                    <a href="#" class="btn" target="_blank">View Live Demo</a>
-                    <a href="#" class="btn" target="_blank">View Source Code</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="modal" id="modal-fire">
-            <div class="modal-content glass-card">
-                <span class="close-btn">&times;</span>
-                <h2>Fire Alarm System</h2>
-                <h4>Project Goal:</h4>
-                <p>To develop an IoT-based fire alarm system that sends real-time alerts upon detecting a fire, providing experience in hardware and software integration.</p>
-                <h4>Technologies Used:</h4>
-                <p>IoT, Flame Sensor, Microcontroller (ESP8266/Arduino), Real-time Alert System.</p>
-                <h4>Key Features:</h4>
-                <ul>
-                   <li>Utilizes sensors for immediate detection of fire or smoke.</li>
-                   <li>Activates a buzzer/alarm upon detecting a threat.</li>
-                   <li>Sends real-time alerts to notify the user instantly.</li>
-                </ul>
-                <h4>What I Learned:</h4>
-                <p>From this project, I learned how to interface sensors with a microcontroller. I understood the principles of IoT and how to build a real-time alert system by sending data from a hardware device.</p>
-                <div class="modal-links">
-                    <a href="#" class="btn" target="_blank">View Live Demo</a>
-                    <a href="#" class="btn" target="_blank">View Source Code</a>
-                </div>
-            </div>
-        </div>
-    
-        <div class="modal" id="modal-calculator">
-            <div class="modal-content glass-card">
-               <span class="close-btn">&times;</span>
-               <h2>Dynamic Calculator</h2>
-               <h4>Project Goal:</h4>
-               <p>To build a fully functional, responsive calculator using Vanilla JavaScript to strengthen DOM manipulation and logic-building skills.</p>
-               <h4>Technologies Used:</h4>
-               <p>HTML5, CSS3 (Flexbox), Vanilla JavaScript.</p>
-               <h4>Key Features:</h4>
-               <ul>
-                    <li>Supports all basic arithmetic operations (add, subtract, multiply, divide).</li>
-                    <li>Includes clear (C) and backspace (⌫) functionality.</li>
-                    <li>Responsive design works well on both mobile and desktop.</li>
-                 </ul>
-                 <h4>What I Learned:</h4>
-                 <p>Through this project, I strengthened my understanding of DOM manipulation and event handling in JavaScript. I also learned the logic for handling mathematical expressions and managing user input.</p>
-                 <div class="modal-links">
-                    <a href="#" class="btn" target="_blank">View Live Demo</a>
-                    <a href="https://github.com/manishgujjar5299/CODSOFT/tree/main/calculator" class="btn" target="_blank">View Source Code</a>
-                </div>
-            </div>
-        </div>
-        <div class="view-all-container">
-           <button id="view-all-btn" class="btn">View All Projects</button>
-       </div>
-
+        <article>
+          <div class="skill-icon">06</div>
+          <h3>Tools</h3>
+          <p>VS Code, GitHub basics, Netlify deployment, Chrome DevTools, Search Console and Analytics basics.</p>
+        </article>
+      </div>
     </section>
 
-    <hr>
+    <section class="section" id="projects">
+      <div class="section-head center">
+        <span>Projects</span>
+        <h2>Selected work and practice projects.</h2>
+      </div>
 
-    <section class="contact" id="contact">
-        <div class="contact-form glass-card">
-            <h2>Get in <span class="glass-text">Touch</span></h2>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="be3601e6-d010-4537-9c38-3972c6af5c1b">
-                <div class="form-group">
-                    <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email" required>
-                </div>
-                <div class="form-group">
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" rows="5" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-            </form>
+      <div class="projects-layout">
+        <article class="project-featured">
+          <div class="project-meta">Featured • Frontend + SEO</div>
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A complete personal portfolio redesigned with a clean interface, responsive sections,
+            SEO-friendly metadata, project cards, and contact form integration.
+          </p>
+          <div class="chips">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>SEO</span>
+          </div>
+          <a class="project-link" href="#home">Currently Viewing →</a>
+        </article>
+
+        <div class="project-side">
+          <article class="project-card">
+            <p class="project-meta">JavaScript Practice</p>
+            <h3>URL Shortener UI</h3>
+            <p>Input validation, copy button concept, clean form UI and dashboard-style link cards.</p>
+            <div class="chips"><span>JS</span><span>DOM</span><span>UI</span></div>
+            <button class="project-link open-modal" data-modal="urlModal">Read Case Study →</button>
+          </article>
+
+          <article class="project-card">
+            <p class="project-meta">Frontend Case Study</p>
+            <h3>Blogging Platform UI</h3>
+            <p>Blog cards, post form layout, dashboard structure and responsive content sections.</p>
+            <div class="chips"><span>HTML</span><span>CSS</span><span>Layout</span></div>
+            <a class="project-link" href="blogging-platform-case-study.html">View Case Study →</a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-meta">UI Practice</p>
+            <h3>E-commerce Product Page</h3>
+            <p>Product cards, price section, call-to-action buttons and clean shopping-style layout.</p>
+            <div class="chips"><span>Cards</span><span>Responsive</span><span>CSS</span></div>
+            <a class="project-link" href="pressmart-case-study.html">View Case Study →</a>
+          </article>
         </div>
-        <div class="contact-image">
-            <img src="images/SK010437 (1).jpg" alt="Manish Kumar contact section image" width="400" height="400">
-        </div>
+      </div>
     </section>
 
-    <hr>
-
-    <footer class="footer">
-        <div class="copyright">
-            <p>&copy; 2025 Manish Kumar | Frontend Developer | Yamunanagar, Haryana, India</p>
+    <section class="section contact-section" id="contact">
+      <div class="contact-card">
+        <div>
+          <span>Contact</span>
+          <h2>Let’s connect for frontend opportunities.</h2>
+          <p>
+            Open to fresher frontend developer, web designer, trainee and internship roles.
+          </p>
         </div>
-    </footer>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <input type="hidden" name="access_key" value="be3601e6-d010-4537-9c38-3972c6af5c1b" />
+          <input type="text" name="fullName" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Manish Kumar. Frontend Developer Portfolio.</p>
+  </footer>
+
+  <div class="modal" id="urlModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close-modal" aria-label="Close modal">×</button>
+      <span>Case Study</span>
+      <h2>URL Shortener UI</h2>
+      <p>
+        This project is a frontend-focused concept where users enter a long URL, get validation feedback,
+        generate a short-link style output and copy it. It helped me practice form handling, DOM updates,
+        clean error messages and simple user experience.
+      </p>
+      <div class="chips">
+        <span>Form Validation</span><span>DOM</span><span>Copy Button</span><span>Responsive UI</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
-    <script src="https://unpkg.com/scrollreveal" defer></script>
-    <script src="script.js" defer></script>
 </html>
