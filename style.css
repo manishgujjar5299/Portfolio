@@ -433,7 +433,8 @@ h3 {
 }
 
 .project-featured {
-  padding: 34px;
+  position: relative;
+  padding: 34px 34px 86px;
   background:
     radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.16), transparent 32%),
     white;
@@ -449,7 +450,8 @@ h3 {
 }
 
 .project-card {
-  padding: 24px;
+  position: relative;
+  padding: 24px 24px 82px;
 }
 
 .project-meta {
@@ -486,6 +488,34 @@ h3 {
   border: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.github-corner {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #0f172a;
+  color: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.18);
+  transition: transform 0.2s ease, background 0.2s ease;
+  z-index: 3;
+}
+
+.github-corner:hover {
+  transform: translateY(-3px);
+  background: #2563eb;
+}
+
+.github-corner svg {
+  width: 21px;
+  height: 21px;
+  fill: currentColor;
 }
 
 .contact-card {
@@ -663,5 +693,10 @@ textarea:focus {
   .project-featured {
     padding: 26px;
     border-radius: 26px;
+  }
+
+  .project-featured,
+  .project-card {
+    padding-bottom: 82px;
   }
 }
